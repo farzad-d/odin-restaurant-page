@@ -1,3 +1,7 @@
-import home from "./home.js";
+import loadHome from "./home.js";
+import loadAbout from "./about.js";
+import loadMenu from "./menu.js";
 
-home();
+// loadHome();
+// loadAbout();
+loadMenu();
