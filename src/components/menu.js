@@ -1,9 +1,9 @@
-import burger from "./burger.jpg";
-import sandwich from "./sandwich.jpg";
-import pasta from "./pasta.jpg";
-import pizza from "./pizza.jpg";
-import taco from "./taco.jpg";
-import salad from "./salad.jpg";
+import burger from "../assets/images/burger.jpg";
+import sandwich from "../assets/images/sandwich.jpg";
+import pasta from "../assets/images/pasta.jpg";
+import pizza from "../assets/images/pizza.jpg";
+import taco from "../assets/images/taco.jpg";
+import salad from "../assets/images/salad.jpg";
 
 const foods = [
   {

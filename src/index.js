@@ -1,23 +1,28 @@
-import loadHome from "./home.js";
-import loadAbout from "./about.js";
-import loadMenu from "./menu.js";
+import "normalize.css";
+import "./styles.css";
+import loadHome from "./components/home.js";
+import loadAbout from "./components/about.js";
+import loadMenu from "./components/menu.js";
 
 const content = document.getElementById("content");
+const btns = document.querySelectorAll(".btn");
 
-const homeTab = document.getElementById("home-btn");
-homeTab.addEventListener("click", () => {
-  content.replaceChildren();
-  loadHome();
-});
+const nav = document.querySelector("nav");
+nav.addEventListener("click", (e) => {
+  if (e.target === nav) return;
 
-const menuTab = document.getElementById("menu-btn");
-menuTab.addEventListener("click", () => {
   content.replaceChildren();
-  loadMenu();
-});
+  btns.forEach((b) => b.classList.remove("active-btn"));
+  e.target.classList.add("active-btn");
 
-const aboutTab = document.getElementById("about-btn");
-aboutTab.addEventListener("click", () => {
-  content.replaceChildren();
-  loadAbout();
+  switch (true) {
+    case e.target.classList.contains("home-btn"):
+      loadHome();
+      break;
+    case e.target.classList.contains("about-btn"):
+      loadAbout();
+      break;
+    case e.target.classList.contains("menu-btn"):
+      loadMenu();
+  }
 });

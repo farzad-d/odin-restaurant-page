@@ -1,4 +1,4 @@
-import fastFoodImg from "./fast-food.png";
+import fastFoodImg from "../assets/images/hero-photo.png";
 
 function loadHome() {
   const content = document.getElementById("content");
