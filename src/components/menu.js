@@ -89,7 +89,7 @@ function loadMenu() {
   const content = document.getElementById("content");
 
   const menuTitle = document.createElement("h1");
-  menuTitle.textContent = "Select Your Dish:";
+  menuTitle.textContent = "Select Your Dish";
   content.appendChild(menuTitle);
 
   const cards = document.createElement("div");

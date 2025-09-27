@@ -69,7 +69,7 @@ nav {
 }
 
 .desc {
-  font-size: large;
+  font-size: 1.2rem;
   width: 500px;
   text-align: justify;
 }
@@ -121,7 +121,7 @@ h1 {
 
 .card:hover {
   box-shadow: 2px 2px 5px #292929;
-  transform: translate(-1px, -3px);
+  transform: translate(-2px, -4px);
 }
 
 .card-details {
@@ -132,4 +132,31 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 30px;
+}
+
+#about-us-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  font-size: 1.2rem;
+}
+
+#about-us-container > p {
+  text-align: justify;
+}
+
+#about-us-container > h2 {
+  margin: 0;
+}
+
+.about-us-desc {
+  margin-bottom: 40px;
+}
+
+#about-us-container > ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5;
 }
