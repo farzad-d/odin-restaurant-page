@@ -64,20 +64,24 @@ class Food {
     foodPhoto.src = this.photoPath;
     card.appendChild(foodPhoto);
 
+    const details = document.createElement("div");
+    details.classList.add("card-details");
+    card.appendChild(details);
+
     const foodName = document.createElement("p");
     foodName.classList.add("food-name");
     foodName.textContent = this.name;
-    card.appendChild(foodName);
+    details.appendChild(foodName);
 
     const foodPrice = document.createElement("p");
     foodPrice.classList.add("food-price");
-    foodPrice.textContent = `${this.price} $`;
-    card.appendChild(foodPrice);
+    foodPrice.textContent = `Price: ${this.price} $`;
+    details.appendChild(foodPrice);
 
     const foodIngredients = document.createElement("p");
     foodIngredients.classList.add("food-ingredients");
-    foodIngredients.textContent = this.ingredients;
-    card.appendChild(foodIngredients);
+    foodIngredients.textContent = `Ingredients: ${this.ingredients}`;
+    details.appendChild(foodIngredients);
   }
 }
 
@@ -85,7 +89,7 @@ function loadMenu() {
   const content = document.getElementById("content");
 
   const menuTitle = document.createElement("h1");
-  menuTitle.textContent = "Food Menu";
+  menuTitle.textContent = "Select Your Dish:";
   content.appendChild(menuTitle);
 
   const cards = document.createElement("div");

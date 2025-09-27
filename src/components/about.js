@@ -2,7 +2,7 @@ function loadAbout() {
   const content = document.getElementById("content");
 
   const aboutUsTitle = document.createElement("h1");
-  aboutUsTitle.textContent = "About Us";
+  aboutUsTitle.textContent = "Give Us Your Feedback";
   content.appendChild(aboutUsTitle);
 
   const aboutUsDesc = document.createElement("p");
