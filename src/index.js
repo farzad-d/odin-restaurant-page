@@ -15,14 +15,13 @@ nav.addEventListener("click", (e) => {
   btns.forEach((b) => b.classList.remove("active-btn"));
   e.target.classList.add("active-btn");
 
-  switch (true) {
-    case e.target.classList.contains("home-btn"):
-      loadHome();
-      break;
-    case e.target.classList.contains("about-btn"):
-      loadAbout();
-      break;
-    case e.target.classList.contains("menu-btn"):
-      loadMenu();
+  if (e.target.classList.contains("home-btn")) {
+    loadHome();
+  } else if (e.target.classList.contains("menu-btn")) {
+    loadMenu();
+  } else if (e.target.classList.contains("about-btn")) {
+    loadAbout();
   }
 });
+
+btns[0].click();

@@ -19,7 +19,12 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #393e46;
-  color: lightgray;
+  color: white;
+
+  background-image: url("./assets/images/smooth-wall-dark.png");
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: auto;
 }
 
 nav {
@@ -47,6 +52,41 @@ nav {
 
 .active-btn {
   background-color: #191d24;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid #62708b;
   color: white;
+}
+
+#home-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 50px;
+}
+
+#home-container > img {
+  width: 360px;
+  margin-top: 50px;
+}
+
+.desc {
+  font-size: large;
+  width: 500px;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 50px;
+
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 520px;
+  padding: 8px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
